@@ -1,11 +1,5 @@
 package clinic;
 
-//public class Nurse extends Personal{
-//    public Nurse(String name, String position) {
-//        super(name, position);
-//    }
-//
-//}
 class Nurse implements Worker {
     protected String name;
     protected int experience;
