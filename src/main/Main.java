@@ -21,9 +21,3 @@ public class Main {
         neon.Swim();
     }
 }
-//Date date = new Date();
-//
-//SimpleDateFormat sdf = new SimpleDateFormat();
-//String dateString = sdf.format(date);
-//
-//        System.out.println(dateString);
