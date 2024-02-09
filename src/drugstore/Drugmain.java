@@ -1,25 +1,50 @@
 package drugstore;
 
+import drugstore.components.Azitronite;
+import drugstore.components.Penicillin;
 import drugstore.components.Water;
 
-import java.util.Iterator;
+import java.util.*;
 
 public class Drugmain {
+
     public static void main(String[] args) {
         Component water = new Water("Water", 10D, 1);
-        Component azitronite = new Water("Azitronite", 2D, 14);
-        Component penicillin = new Water("Penicillin", 1.6D, 6);
+        Component azitronite = new Azitronite("Azitronite", 2D, 14);
+        Component penicillin = new Penicillin("penicillin", 1.6D, 6);
 
-        Pharmacy p1 = new Pharmacy();
-        p1.add(water, azitronite);
 
-        Pharmacy p2 = new Pharmacy();
-        p2.add(penicillin, water);
+        PharmacyTwo p1 = new PharmacyTwo();
+        p1.addComponents(water, azitronite);
 
-        Iterator<Component> iterator2 = p2;
+        PharmacyTwo p2 = new PharmacyTwo();
+        p2.addComponents(penicillin, water);
 
-        while (iterator2.hasNext()) {
-            System.out.println(p2.next().toString());
-        }
+        PharmacyTwo p3 = new PharmacyTwo();
+        p3.addComponents(azitronite, penicillin);
+
+        ArrayList<Component> components = new ArrayList<>();
+
+
+
+
+//        components.add(azitronite);
+//        components.add(water);
+//        components.add(penicillin);
+//
+//        System.out.println(components);
+//
+//        Collections.sort(components,Comparator.reverseOrder());
+//        System.out.println(components);
+
+//        Iterator<Component> iterator = p1;
+//        while (iterator.hasNext()) {
+//            System.out.println(p1.next().toString());
+//        }
+
+//        for (Component c : p2) {
+//            System.out.println(c);
+//        }
+
     }
 }
