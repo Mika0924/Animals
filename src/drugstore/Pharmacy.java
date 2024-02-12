@@ -8,8 +8,8 @@ public class Pharmacy implements Iterator<Pharmacy> {
     private List<Pharmacy> components = new ArrayList<>();
     private int index = 0;
 
-    public void addComponents(Pharmacy ... components) {
-        for(Pharmacy c : components){
+    public void addComponents(Pharmacy... components) {
+        for (Pharmacy c : components) {
             this.components.add(c);
         }
     }

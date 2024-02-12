@@ -26,8 +26,6 @@ public class Drugmain {
         ArrayList<Component> components = new ArrayList<>();
 
 
-
-
 //        components.add(azitronite);
 //        components.add(water);
 //        components.add(penicillin);

@@ -8,8 +8,8 @@ public class PharmacyTwo implements Iterable<Component> {
     private List<Component> components = new ArrayList<>();
     private int index = 0;
 
-    public void addComponents(Component ... components) {
-        for(Component c : components){
+    public void addComponents(Component... components) {
+        for (Component c : components) {
             this.components.add(c);
         }
     }
